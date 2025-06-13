@@ -2,9 +2,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-const Texto= ()=> {
+const Texto= (props)=> {
+  const { contenido } = props;
   return (
-    <Text>Hola Mundo React Native</Text>
+    <Text>{contenido}</Text>
   )
 }
 
@@ -12,9 +13,9 @@ const Texto= ()=> {
 export default function App() {
   return (
     <View style={styles.container}>
-      <Texto></Texto>
-      <Texto></Texto>
-      <Texto></Texto>
+      <Texto contenido="Hola mundo React Native"></Texto>
+      <Texto contenido="Hola mundo React Native"></Texto>
+      <Texto contenido="Hola mundo React Native"></Texto>
       <Button title="Presionar"></Button>
       <StatusBar style="auto" />
     </View>
