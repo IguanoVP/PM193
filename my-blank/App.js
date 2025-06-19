@@ -29,18 +29,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
+    alignItems: 'strech',
     justifyContent: 'center',
-    flexDirection:'row'
   },
   text:{
     color: 'white',
     fontSize: 27,
-    height:120,
-    width:120,
   },
-  azul: {backgroundColor: 'blue',flex:1},
-  verde: {backgroundColor: 'green', flex:3},
-  negro: {backgroundColor: 'black',flex:2}
+  azul: {backgroundColor: 'blue'},
+  verde: {backgroundColor: 'green'},
+  negro: {backgroundColor: 'black',}
 });
  
